@@ -1,0 +1,45 @@
+main {
+  margin: auto;
+  max-width: 1400px;
+}
+.container-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "card-one card-two card-three"
+    "card-one card-four card-five"
+    "card-six card-seven card-seven";
+  column-gap: 20px;
+  row-gap: 20px;
+  min-height: 800px;
+}
+
+.picture-one {
+  grid-area: card-one;
+  background-color: aliceblue;
+}
+.picture-two {
+  grid-area: card-two;
+  background-color: aqua;
+}
+.picture-three {
+  grid-area: card-three;
+  background-color: blueviolet;
+}
+.picture-four {
+  grid-area: card-four;
+  background-color: antiquewhite;
+}
+
+.picture-five {
+  grid-area: card-five;
+  background-color: antiquewhite;
+}
+.picture-six {
+  grid-area: card-six;
+  background-color: antiquewhite;
+}
+.picture-seven {
+  grid-area: card-seven;
+  background-color: antiquewhite;
+}
