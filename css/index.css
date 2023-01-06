@@ -1,30 +1,49 @@
 main {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }
+main {
+  display: flex;
+}
+
 .container-cards {
+  flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "card-one card-two card-three"
-    "card-one card-four card-five"
-    "card-six card-seven card-seven";
+    "card-one card-two"
+    "card-one card-four"
+    "card-six card-seven"
+    "card-five card-three";
   column-gap: 20px;
   row-gap: 20px;
   min-height: 800px;
+  padding: 20px;
 }
 
 .picture-one {
   grid-area: card-one;
-  background-color: aliceblue;
+  background-image: url("/images/tyler-nix-567726-unsplash.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .picture-two {
   grid-area: card-two;
-  background-color: aqua;
+  background-image: url("/images/hiking-equiptments.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .picture-three {
   grid-area: card-three;
-  background-color: blueviolet;
+  background-image: url("/images/dessert.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .picture-four {
   grid-area: card-four;
@@ -33,13 +52,25 @@ main {
 
 .picture-five {
   grid-area: card-five;
-  background-color: antiquewhite;
+  background-image: url("/images/horses.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .picture-six {
   grid-area: card-six;
-  background-color: antiquewhite;
+  background-image: url("/images/camping-tents.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .picture-seven {
   grid-area: card-seven;
-  background-color: antiquewhite;
+  background-image: url("/images/ice-mountains.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

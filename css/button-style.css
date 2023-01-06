@@ -1,0 +1,23 @@
+/* Home page */
+
+#btn_readMore {
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  color: white;
+  border: none;
+}
+
+#btn_readMore:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
