@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 main {
   margin: auto;
   max-width: 1200px;
@@ -20,57 +24,71 @@ main {
   min-height: 800px;
   padding: 20px;
 }
-
+.card {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover {
+  transition: 200ms;
+  transform: scale(1.05);
+}
 .picture-one {
   grid-area: card-one;
   background-image: url("/images/tyler-nix-567726-unsplash.jpg");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
+
 .picture-two {
   grid-area: card-two;
   background-image: url("/images/hiking-equiptments.jpg");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .picture-three {
   grid-area: card-three;
   background-image: url("/images/dessert.jpg");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .picture-four {
   grid-area: card-four;
-  background-color: antiquewhite;
+  background-color: #414751;
 }
 
 .picture-five {
   grid-area: card-five;
   background-image: url("/images/horses.jpg");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .picture-six {
   grid-area: card-six;
   background-image: url("/images/camping-tents.jpg");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .picture-seven {
   grid-area: card-seven;
   background-image: url("/images/ice-mountains.jpg");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+/* Navigation header */
+.nav-header {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #2c3036;
+  color: white;
+}
+#nav-header-logo {
+  width: 35px;
+  height: 35px;
+}
+.nav-right {
+}
+.header-icon {
+  align-items: stretch;
+  font-size: 20px;
 }
