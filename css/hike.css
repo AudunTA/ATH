@@ -19,8 +19,7 @@ main {
 .container-cards {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-
+  grid-template-columns: 1fr;
   column-gap: 20px;
   row-gap: 20px;
   min-height: 800px;
@@ -46,6 +45,27 @@ main {
 
 .img-hikes {
   width: 100%;
+}
+
+/*nav mobile*/
+.menu-mobile {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: auto;
+  background-color: blue;
+}
+
+@media screen and (min-width: 600px) {
+  .container-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card-one card-two"
+      "card-one card-four"
+      "card-six card-seven"
+      "card-five card-three";
+  }
 }
 
 @media screen and (min-width: 900px) {

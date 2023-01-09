@@ -19,9 +19,39 @@
   width: 35px;
   height: 35px;
 }
-.nav-right {
+.nav-left {
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-middle {
+  display: flex;
+  align-items: center;
+}
+.nav-middle li {
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+
 .header-icon {
   align-items: stretch;
   font-size: 20px;
+  margin-right: 1em;
+}
+.fa-bars {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .fa-bars {
+    display: block;
+  }
+  .nav-middle {
+    display: none;
+  }
 }
