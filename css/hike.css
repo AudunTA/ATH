@@ -20,11 +20,7 @@ main {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "card-one card-two"
-    "card-one card-four"
-    "card-six card-seven"
-    "card-five card-three";
+
   column-gap: 20px;
   row-gap: 20px;
   min-height: 800px;
@@ -47,43 +43,13 @@ main {
   transition: 200ms;
   transform: scale(1.05);
 }
-.picture-one {
-  grid-area: card-one;
-  background-image: url("/images/tyler-nix-567726-unsplash.jpg");
-}
 
-.picture-two {
-  grid-area: card-two;
-  background-image: url("/images/hiking-equiptments.jpg");
-}
-.picture-three {
-  grid-area: card-three;
-  background-image: url("/images/dessert.jpg");
-}
-.picture-four {
-  grid-area: card-four;
-  background-color: #414751;
-}
-
-.picture-five {
-  grid-area: card-five;
-  background-image: url("/images/horses.jpg");
-}
-.picture-six {
-  grid-area: card-six;
-  background-image: url("/images/camping-tents.jpg");
-}
-.picture-seven {
-  grid-area: card-seven;
-  background-image: url("/images/ice-mountains.jpg");
+.img-hikes {
+  width: 100%;
 }
 
 @media screen and (min-width: 900px) {
   .container-cards {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "card-one card-two card-three"
-      "card-one card-four card-five"
-      "card-six card-seven card-seven";
   }
 }
