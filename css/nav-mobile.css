@@ -13,7 +13,7 @@
   width: 250px;
   margin: 20px;
   margin-left: 0px;
-  background-color: white;
+  background-color: var(--almost-white);
   border: solid 0.1em;
   border-color: rgba(179, 164, 164, 0.2);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@
 .menu-mobile li:hover {
   cursor: pointer;
   background-color: #0066dd;
-  color: white;
+  color: var(--almost-white);
 }
 
 @media screen and (min-width: 900px) {

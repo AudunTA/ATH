@@ -1,0 +1,6 @@
+:root {
+  --dark-gradient: linear-gradient(to right, #2c3036 0%, #282c31);
+  --light-gradient: linear-gradient(to right, #414751 0%, #373c44);
+  --btn_color: #0d6fdf;
+  --almost-white: #dce4e5;
+}

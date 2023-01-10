@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
-
+@import "./nav-header.css";
+@import "./nav-mobile.css";
+@import "./nav-sidebar.css";
+@import "./button-style.css";
 body {
   margin: 0;
   padding: 0;
@@ -27,13 +30,11 @@ main {
 }
 .card {
   border: solid 0.1em;
+  border-radius: 9px;
   border-color: rgba(179, 164, 164, 0.2);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-
+  background-image: var(--light-gradient);
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,19 +43,30 @@ main {
   transition: 200ms;
   transform: scale(1.05);
 }
-
-.img-hikes {
-  width: 100%;
+.card h2 {
+  font-size: 15px;
 }
-
-/*nav mobile*/
-.menu-mobile {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: auto;
-  background-color: blue;
+.img-hikes {
+  width: calc(100% - 10px);
+  margin: 5px;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.tags-container {
+  display: flex;
+  justify-content: first baseline;
+}
+.tags-container p {
+  margin: 0;
+  margin-right: 0.5em;
+  color: var(--almost-white);
+  background-image: var(--dark-gradient);
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 19px;
+}
+.hike-cards-description p {
 }
 
 @media screen and (min-width: 600px) {

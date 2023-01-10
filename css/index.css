@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
-
+@import "./nav-header.css";
+@import "./nav-mobile.css";
+@import "./nav-sidebar.css";
+@import "./button-style.css";
 body {
   margin: 0;
   padding: 0;
@@ -65,7 +68,7 @@ main {
 }
 .picture-four {
   grid-area: card-four;
-  background-color: #414751;
+  background-image: var(--dark-gradient);
 }
 
 .picture-five {
@@ -90,7 +93,7 @@ main {
   padding: 15px;
   margin: 15px;
   color: white;
-  background: #0d6fdf;
+  background: var(--btn_color);
   border: solid 0.1em;
   border-color: rgba(179, 164, 164, 0.2);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
