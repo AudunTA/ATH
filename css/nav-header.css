@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
 }
-.nav-middle li {
+.nav-middle p {
   list-style-type: none;
   margin-left: 5px;
   margin-right: 5px;

@@ -44,8 +44,23 @@ main {
   transform: scale(1.05);
 }
 .card h2 {
+  margin: 5px;
+  margin-block-start: 5px;
+  margin-block-end: 0em;
   font-size: 15px;
+  color: var(--almost-white);
 }
+.duration-text {
+  color: gray;
+  font-size: 10px;
+}
+.card p {
+  margin: 5px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  color: var(--almost-white);
+}
+
 .img-hikes {
   width: calc(100% - 10px);
   margin: 5px;
@@ -66,21 +81,14 @@ main {
   padding: 10px;
   border-radius: 19px;
 }
-.hike-cards-description p {
-}
 
 @media screen and (min-width: 600px) {
   .container-cards {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "card-one card-two"
-      "card-one card-four"
-      "card-six card-seven"
-      "card-five card-three";
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
   .container-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
