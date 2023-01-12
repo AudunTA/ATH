@@ -1,20 +1,36 @@
 /* Home page */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
-#btn_readMore {
-  background-color: #0066dd;
-  padding: 10px;
-  border: none;
-  align-self: flex-end;
+@import "./colors.css";
+
+.btn_viewHikes {
+  padding: 15px;
+  margin: 15px;
   color: white;
-  font-family: "Inter", sans-serif;
+  background: var(--btn_color);
+  border: solid 0.1em;
+  border-color: rgba(179, 164, 164, 0.2);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  cursor: pointer;
   font-weight: 800;
-  font-size: 15px;
-  border-radius: 10px;
-  margin: 1em;
+  font-size: 1em;
 }
 
-#btn_readMore:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
+#btn_submit {
+  background-image: var(--btn_color);
+  color: var(--almost-white);
+  border: none;
+  float: right;
+  margin-top: 1em;
+  padding: 8px;
+  font-weight: 800;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+#btn_submit:hover {
+  transition: 200ms;
+  transform: scale(1.05);
 }

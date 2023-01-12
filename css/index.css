@@ -3,6 +3,7 @@
 @import "./nav-mobile.css";
 @import "./nav-sidebar.css";
 @import "./button-style.css";
+@import "./colors.css";
 body {
   margin: 0;
   padding: 0;
