@@ -8,6 +8,7 @@
 .nav-wrapper {
   border: solid 0.1em;
   border-color: rgba(179, 164, 164, 0.2);
+  border-radius: 9px;
   display: flex;
   justify-content: space-between;
   margin-left: 20px;

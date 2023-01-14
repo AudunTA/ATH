@@ -18,19 +18,19 @@
 }
 
 #btn_submit {
-  background-image: var(--btn_color);
-  color: var(--almost-white);
-  border: none;
-  float: right;
-  margin-top: 1em;
-  padding: 8px;
-  font-weight: 800;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 5px 20px;
+  color: white;
+  background: var(--btn_color);
+  border: solid 0.1em;
+  border-color: rgba(179, 164, 164, 0.2);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 9px;
   cursor: pointer;
+  font-weight: 800;
+  font-size: 1em;
+  float: right;
 }
 #btn_submit:hover {
-  transition: 200ms;
+  transition: 100ms;
   transform: scale(1.05);
 }

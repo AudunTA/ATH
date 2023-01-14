@@ -6,6 +6,7 @@
   top: 0;
   left: auto;
   background-color: blue;
+  font-size: 12px;
 }
 
 .menu-mobile {
@@ -23,9 +24,12 @@
   justify-content: space-between;
 }
 
+.mobile-main-nav {
+  text-align: center;
+}
 .menu-mobile li {
   list-style-type: none;
-  padding: 10px;
+  padding: 5px;
   color: black;
 }
 .menu-mobile ul {
@@ -45,7 +49,11 @@
   background-color: #0066dd;
   color: var(--almost-white);
 }
-
+.mobile-nav-icon {
+  text-align: right;
+  padding: 10px;
+  font-size: 17px;
+}
 @media screen and (min-width: 900px) {
   .menu-mobile {
     display: none !important;

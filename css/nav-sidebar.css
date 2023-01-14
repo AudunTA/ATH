@@ -5,7 +5,7 @@
   background-image: var(--light-gradient);
   border-radius: 9px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-
+  line-height: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,6 +14,7 @@
 #sidebar li {
   list-style-type: none;
   padding: 10px;
+
   color: var(--almost-white);
 }
 #sidebar ul {
@@ -33,7 +34,10 @@
   background-image: var(--dark-gradient);
   color: var(--almost-white);
 }
-
+.nav-border-top {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
 @media screen and (max-width: 900px) {
   #sidebar {
     display: none;
