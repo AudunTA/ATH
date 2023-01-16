@@ -14,7 +14,7 @@
   margin-left: 20px;
   margin-right: 20px;
   background-image: var(--dark-gradient);
-  color: white;
+  color: var(--almost-white);
 }
 #nav-header-logo {
   width: 35px;
@@ -33,20 +33,29 @@
   display: flex;
   align-items: center;
 }
-.nav-middle p {
+.nav-middle a {
+  color: var(--almost-white);
   list-style-type: none;
   margin-left: 5px;
   margin-right: 5px;
+  text-decoration: none;
+}
+.active-nav {
   text-decoration: underline;
 }
-
 .header-icon {
   align-items: stretch;
   font-size: 20px;
   margin-right: 1em;
 }
+
 .fa-bars {
   display: none;
+}
+@media screen and (mmin-width: 900px) {
+  .fa-bars {
+    display: block;
+  }
 }
 @media screen and (max-width: 900px) {
   .fa-bars {

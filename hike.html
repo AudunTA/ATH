@@ -1,41 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/hike.css" />
+    <script
+      src="https://kit.fontawesome.com/5386c22845.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hike - Adventure Trails Hike</title>
+    <script defer src="/js/script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/hike.css" />
-  <script src="https://kit.fontawesome.com/5386c22845.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
-  <title>Hike - Adventure Trails Hike</title>
-  <script defer src="/js/script.js"></script>
+  <body>
+    <nav class="nav-header">
+      <div class="nav-wrapper">
+        <div class="nav-left">
+          <a href="index.html"
+            ><img
+              src="/images/Logo.png"
+              id="nav-header-logo"
+              alt="Logo image for Adventure Hike Trails"
+          /></a>
+        </div>
+        <div class="nav-middle">
+          <a href="index.html" class="active-nav">Home</a>
+          <a href="hike.html">Hike</a>
+          <a href="contact.html">Contact </a>
+        </div>
+        <div class="nav-right">
+          <i class="fa-solid fa-gear header-icon"></i>
+          <i class="fa-solid fa-bell header-icon"></i>
+          <i class="fa fa-bars header-icon" aria-hidden="true"></i>
+        </div>
+        <nav class="menu-mobile" style="display: none">
+          <div class="top-navigation">
+            <ul>
+              <li class="subheader-sidebar">
+                Short Hikes
+                <i class="fa fa-bars header-icon" aria-hidden="true"></i>
+              </li>
+              <li>Weekend in the Pyrénées</li>
+              <li>Seven Mountains, Bergen</li>
+              <li>Monte Capanne, Tuscany</li>
+            </ul>
+            <ul>
+              <li class="subheader-sidebar">Long Hikes</li>
+              <li>Laurapinta Trail, Australia</li>
+              <li>Patagonia, Argentina / Chile</li>
+              <li>Jammu and Kashmir, India</li>
+            </ul>
+            <ul>
+              <li class="subheader-sidebar">Camping Hikes</li>
 
-</head>
+              <li>Camping in the Atlas Mountains of Morocco</li>
+              <li>Patagonia, Argentina / Chile</li>
+              <li>Jammu and Kashmir, India</li>
+            </ul>
+          </div>
+          <div class="bottom-navigation">
+            <ul>
+              <li>Sustainability</li>
+              <li>Health & Safety</li>
+              <li>FAQ</li>
+              <li>About Our Guides</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <div class="container-cards">
+        <div class="card picture-one">
+          <div class="hike-card-info">
+            <h2>Seven Mountains, Bergen</h2>
+            <p class="duration-text">
+              <i class="fa-solid fa-caret-right"></i> duration: 4 days, Norway
+            </p>
+          </div>
+          <div class="hike-card-layer-image">
+            <img src="/images/camping-tents.jpg" class="img-hikes" alt="" />
+            <div class="tags-container">
+              <p>Hiking</p>
+              <p>Mountains</p>
+              <p>Featured</p>
+            </div>
+          </div>
+          <div class="hike-cards-description">
+            <p>
+              The "Seven Mountains" are the peaks surrounding the Norwegian city
+              of Bergen. The Bergen Hiking Club offers an annual tour of these.
+              Be sure to bring rain gear!
+            </p>
+          </div>
+        </div>
 
-<body>
-  <nav class="nav-header">
-    <div class="nav-wrapper">
-      <div class="nav-left">
-        <img src="/images/Logo.png" id="nav-header-logo" alt="Logo image for Adventure Hike Trails" />
+        <div class="card picture-two">
+          <div class="hike-card-info">
+            <h2>Monte Capanne, Tuscany</h2>
+            <p class="duration-text">
+              <i class="fa-solid fa-caret-right"></i> duration: 4 days, Norway
+            </p>
+          </div>
+          <div class="hike-card-layer-image">
+            <img
+              src="/images/ice-mountains.jpg"
+              class="img-hikes"
+              alt="Seven Mountains, Bergen Norway"
+            />
+            <div class="tags-container">
+              <p>Hiking</p>
+              <p>Mountains</p>
+              <p>Snow</p>
+            </div>
+          </div>
+          <div class="hike-cards-description">
+            <p>
+              Located on the island of Elba, is one of the highest peaks in
+              Tuscany. Visit the Hermitage of San Cerbone, as well as the fort
+              near the medieval village.
+            </p>
+          </div>
+        </div>
+
+        <div class="card picture-one">
+          <div class="hike-card-info">
+            <h2>Jammu and Kashmir, India</h2>
+            <p class="duration-text">
+              <i class="fa-solid fa-caret-right"></i> duration: 21 days
+            </p>
+          </div>
+          <div class="hike-card-layer-image">
+            <img
+              src="/images/india.jpg"
+              class="img-hikes"
+              alt="image of Jammu and Kashmir, India"
+            />
+            <div class="tags-container">
+              <p>Hiking</p>
+              <p>Mountains</p>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="hike-cards-description">
+            <p>
+              Some of the most breathtaking views of Northern India are included
+              on this three-week tour, with an increasingly demanding hiking
+              itinerary.
+            </p>
+          </div>
+        </div>
+
+        <div class="card picture-two">
+          <div class="hike-card-info">
+            <h2>Yurt camping, Mongolia</h2>
+            <p class="duration-text">
+              <i class="fa-solid fa-caret-right"></i> duration: 2 days
+            </p>
+          </div>
+          <div class="hike-card-layer-image">
+            <img
+              src="/images/horses.jpg"
+              class="img-hikes"
+              alt="image of horse in Yurt camping"
+            />
+            <div class="tags-container">
+              <p>Hiking</p>
+              <p>Horse riding</p>
+              <p>Featured</p>
+            </div>
+          </div>
+          <div class="hike-cards-description">
+            <p>
+              Experience Mongolian herding culture first-hand in this exciting
+              two-week tour. Included are a short trip on the Trans-Siberian
+              Railway and two days of horseback riding.
+            </p>
+          </div>
+        </div>
+
+        <div class="card picture-two">
+          <div class="hike-card-info">
+            <h2>Patagonia, Argentina/Chile</h2>
+            <p class="duration-text">
+              <i class="fa-solid fa-caret-right"></i> duration: 14 days
+            </p>
+          </div>
+          <div class="hike-card-layer-image">
+            <img
+              src="/images/kalen-emsley-99659-unsplash.jpg"
+              class="img-hikes"
+              alt="image Patagonia"
+            />
+            <div class="tags-container">
+              <p>Hiking</p>
+              <p>Mountains</p>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="hike-cards-description">
+            <p>
+              A two-week intense tour, including Refugio Frey, Cerro Castillo,
+              and Exploradores Glacier. This is a demanding tour, but well worth
+              the effort!
+            </p>
+          </div>
+        </div>
+
+        <div class="card picture-two">
+          <div class="hike-card-info">
+            <h2>Weekend in the Pyrénées</h2>
+            <p class="duration-text">
+              <i class="fa-solid fa-caret-right"></i> duration: 7 days
+            </p>
+          </div>
+          <div class="hike-card-layer-image">
+            <img
+              src="/images/hassan-ouajbir-412010-unsplash.jpg"
+              class="img-hikes"
+              alt="image for weekend in the pyrenees"
+            />
+            <div class="tags-container">
+              <p>Hiking</p>
+              <p>Mountains</p>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="hike-cards-description">
+            <p>
+              Wildlife Park Parc Naturel Régional des Pyrénées Catalanes. The
+              trip includes a visit to a Cathar castle as well as an exhibition
+              of local birds of prey.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="nav-middle">
-        <p>Home</p>
-        <p>Hike</p>
-        <p>Contact</p>
-      </div>
-      <div class="nav-right">
-        <i class="fa-solid fa-gear header-icon"></i>
-        <i class="fa-solid fa-bell header-icon"></i>
-        <i class="fa fa-bars header-icon" aria-hidden="true"></i>
-      </div>
-      <nav class="menu-mobile" style="display: none">
+      <nav id="sidebar">
         <div class="top-navigation">
           <ul>
-            <li class="subheader-sidebar">
-              Short Hikes
-              <i class="fa fa-bars header-icon" aria-hidden="true"></i>
-            </li>
+            <li class="subheader-sidebar">Short Hikes</li>
             <li>Weekend in the Pyrénées</li>
             <li>Seven Mountains, Bergen</li>
             <li>Monte Capanne, Tuscany</li>
@@ -48,7 +256,6 @@
           </ul>
           <ul>
             <li class="subheader-sidebar">Camping Hikes</li>
-
             <li>Camping in the Atlas Mountains of Morocco</li>
             <li>Patagonia, Argentina / Chile</li>
             <li>Jammu and Kashmir, India</li>
@@ -63,169 +270,6 @@
           </ul>
         </div>
       </nav>
-    </div>
-  </nav>
-  <main>
-    <div class="container-cards">
-      <div class="card picture-one">
-        <div class="hike-card-info">
-          <h2>Seven Mountains, Bergen</h2>
-          <p class="duration-text"><i class="fa-solid fa-caret-right"></i> duration: 4 days, Norway</p>
-        </div>
-        <div class="hike-card-layer-image">
-          <img src="/images/camping-tents.jpg" class="img-hikes" alt="">
-          <div class="tags-container">
-            <p>Hiking</p>
-            <p>Mountains</p>
-            <p>Featured</p>
-          </div>
-        </div>
-        <div class="hike-cards-description">
-          <p>The "Seven Mountains" are the peaks surrounding the Norwegian city of Bergen.
-            The Bergen Hiking Club offers an annual tour of these. Be sure to bring rain gear!
-          </p>
-        </div>
-      </div>
-
-
-      <div class="card picture-two">
-        <div class="hike-card-info">
-          <h2>Monte Capanne, Tuscany</h2>
-          <p class="duration-text"><i class="fa-solid fa-caret-right"></i> duration: 4 days, Norway</p>
-        </div>
-        <div class="hike-card-layer-image">
-          <img src="/images/ice-mountains.jpg" class="img-hikes" alt="Seven Mountains, Bergen Norway">
-          <div class="tags-container">
-            <p>Hiking</p>
-            <p>Mountains</p>
-            <p>Snow</p>
-          </div>
-        </div>
-        <div class="hike-cards-description">
-          <p>Located on the island of Elba, is one of the highest peaks in Tuscany. Visit the Hermitage of
-            San Cerbone,
-            as well as the fort near the medieval village.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="card picture-one">
-        <div class="hike-card-info">
-          <h2>Jammu and Kashmir, India</h2>
-          <p class="duration-text"><i class="fa-solid fa-caret-right"></i> duration: 21 days</p>
-        </div>
-        <div class="hike-card-layer-image">
-          <img src="/images/india.jpg" class="img-hikes" alt="image of Jammu and Kashmir, India">
-          <div class="tags-container">
-            <p>Hiking</p>
-            <p>Mountains</p>
-            <p>Experienced</p>
-          </div>
-        </div>
-        <div class="hike-cards-description">
-          <p>Some of the most breathtaking views of Northern India are included on this three-week tour,
-            with an increasingly demanding hiking itinerary.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="card picture-two">
-        <div class="hike-card-info">
-          <h2>Yurt camping, Mongolia</h2>
-          <p class="duration-text"><i class="fa-solid fa-caret-right"></i> duration: 2 days</p>
-        </div>
-        <div class="hike-card-layer-image">
-          <img src="/images/horses.jpg" class="img-hikes" alt="image of horse in Yurt camping">
-          <div class="tags-container">
-            <p>Hiking</p>
-            <p>Horse riding</p>
-            <p>Featured</p>
-          </div>
-        </div>
-        <div class="hike-cards-description">
-          <p>Experience Mongolian herding culture first-hand in this exciting two-week tour.
-            Included are a short trip on the Trans-Siberian Railway and two days of horseback riding.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="card picture-two">
-        <div class="hike-card-info">
-          <h2>Patagonia, Argentina/Chile</h2>
-          <p class="duration-text"><i class="fa-solid fa-caret-right"></i> duration: 14 days</p>
-        </div>
-        <div class="hike-card-layer-image">
-          <img src="/images/kalen-emsley-99659-unsplash.jpg" class="img-hikes" alt="image Patagonia">
-          <div class="tags-container">
-            <p>Hiking</p>
-            <p>Mountains</p>
-            <p>Experienced</p>
-          </div>
-        </div>
-        <div class="hike-cards-description">
-          <p>A two-week intense tour, including Refugio Frey, Cerro Castillo,
-            and Exploradores Glacier. This is a demanding tour, but well worth the effort!
-          </p>
-        </div>
-      </div>
-
-
-      <div class="card picture-two">
-        <div class="hike-card-info">
-          <h2>Weekend in the Pyrénées</h2>
-          <p class="duration-text"><i class="fa-solid fa-caret-right"></i> duration: 7 days</p>
-        </div>
-        <div class="hike-card-layer-image">
-          <img src="/images/hassan-ouajbir-412010-unsplash.jpg" class="img-hikes"
-            alt="image for weekend in the pyrenees">
-          <div class="tags-container">
-            <p>Hiking</p>
-            <p>Mountains</p>
-            <p>Experienced</p>
-          </div>
-        </div>
-        <div class="hike-cards-description">
-          <p>Wildlife Park Parc Naturel Régional des Pyrénées Catalanes.
-            The trip includes a visit to a Cathar castle as well as an exhibition of local birds of prey.
-          </p>
-        </div>
-      </div>
-
-    </div>
-    <nav id="sidebar">
-      <div class="top-navigation">
-        <ul>
-          <li class="subheader-sidebar">Short Hikes</li>
-          <li>Weekend in the Pyrénées</li>
-          <li>Seven Mountains, Bergen</li>
-          <li>Monte Capanne, Tuscany</li>
-        </ul>
-        <ul>
-          <li class="subheader-sidebar">Long Hikes</li>
-          <li>Laurapinta Trail, Australia</li>
-          <li>Patagonia, Argentina / Chile</li>
-          <li>Jammu and Kashmir, India</li>
-        </ul>
-        <ul>
-          <li class="subheader-sidebar">Camping Hikes</li>
-          <li>Camping in the Atlas Mountains of Morocco</li>
-          <li>Patagonia, Argentina / Chile</li>
-          <li>Jammu and Kashmir, India</li>
-        </ul>
-      </div>
-      <div class="bottom-navigation">
-        <ul>
-          <li>Sustainability</li>
-          <li>Health & Safety</li>
-          <li>FAQ</li>
-          <li>About Our Guides</li>
-        </ul>
-      </div>
-    </nav>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
