@@ -1,0 +1,26 @@
+@import "./colors.css";
+
+footer {
+  margin: auto;
+  max-width: 1200px;
+  padding-bottom: 20px;
+}
+
+.wrapper-footer {
+  text-align: center;
+  background-image: var(--dark-gradient);
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 9px;
+}
+
+.icons-footer {
+  font-size: 30px;
+}
+.footer-icon {
+  cursor: pointer;
+  color: var(--almost-white);
+  margin-left: 10px;
+  margin-right: 10px;
+}

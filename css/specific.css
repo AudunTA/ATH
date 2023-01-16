@@ -23,6 +23,11 @@ main {
 .container-cards {
   flex: 1;
   display: grid;
+  grid-template-areas:
+    "image"
+    "description"
+    "info";
+
   grid-template-columns: 1fr;
   column-gap: 20px;
   row-gap: 20px;
@@ -43,16 +48,12 @@ main {
 .container-cards a {
   text-decoration: none;
 }
-.card:hover {
-  transition: 200ms;
-  transform: scale(1.05);
-}
-.card h2 {
+
+.card h1 {
   margin: 5px;
-  margin-block-start: 5px;
-  margin-block-end: 0em;
+
   font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   color: var(--almost-white);
 }
 .duration-text {
@@ -66,35 +67,49 @@ main {
   color: var(--almost-white);
 }
 
-.img-hikes {
-  width: calc(100% - 10px);
-  margin: 5px;
-  max-height: 160px;
-  object-fit: cover;
-  border-radius: 9px;
+.card-image {
+  grid-area: image;
 }
-.tags-container {
-  display: flex;
-  justify-content: first baseline;
+.card-info {
+  grid-area: info;
 }
-.tags-container p {
-  margin: 0;
-  margin-right: 0.5em;
-  color: var(--almost-white);
-  background-image: var(--dark-gradient);
-  font-size: 12px;
-  padding: 10px;
-  border-radius: 19px;
+.card-description {
+  grid-area: description;
 }
 
+#img-specific {
+  margin: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 9px;
+
+  object-fit: cover;
+}
+#img-hikeMap {
+  margin: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  object-fit: cover;
+}
+.div-align {
+  margin: auto 10px;
+}
 @media screen and (min-width: 600px) {
   .container-cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 1fr;
+
+    grid-template-areas:
+      "image image image"
+      "info description description";
   }
 }
 
 @media screen and (min-width: 1080px) {
   .container-cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card h1 {
+    font-size: 2em;
   }
 }
