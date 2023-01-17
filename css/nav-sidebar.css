@@ -14,13 +14,15 @@
 #sidebar li {
   list-style-type: none;
   padding: 10px;
-
   color: var(--almost-white);
 }
 #sidebar ul {
   margin-block-start: 0px;
   margin-block-end: 0px;
   padding-inline-start: 0px;
+}
+#sidebar li {
+  padding-inline-start: 15px;
 }
 .subheader-sidebar {
   padding-left: 0px;

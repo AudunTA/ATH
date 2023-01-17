@@ -48,21 +48,16 @@
 }
 
 .header-icon {
-  align-items: stretch;
   font-size: 20px;
   margin-right: 1em;
 }
 
-.fa-bars {
+#testone {
   display: none;
 }
-@media screen and (mmin-width: 900px) {
-  .fa-bars {
-    display: block;
-  }
-}
+
 @media screen and (max-width: 900px) {
-  .fa-bars {
+  #testone {
     display: block;
   }
   .nav-middle {
