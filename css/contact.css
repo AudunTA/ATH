@@ -44,7 +44,7 @@ main {
   color: var(--almost-white);
 }
 #input-message {
-  width: calc(100% - 8px);
+  width: calc(100% - 6px);
   margin-top: 1em;
   resize: none;
   font-family: "Inter", sans-serif;
