@@ -3,6 +3,8 @@
 @import "./nav-mobile.css";
 @import "./nav-sidebar.css";
 @import "./button-style.css";
+@import "./footer.css";
+
 body {
   margin: 0;
   padding: 0;
@@ -38,6 +40,8 @@ main {
 .wrapper-form {
   max-width: 450px;
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .wrapper-form h1 {
@@ -74,25 +78,10 @@ main {
   margin-block-end: 0em;
 }
 @media screen and (min-width: 600px) {
-  .container-cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "card-one card-two"
-      "card-one card-four"
-      "card-six card-seven"
-      "card-five card-three";
-  }
 }
 
 @media screen and (min-width: 900px) {
-  .container-cards {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "card-one card-two card-three"
-      "card-one card-four card-five"
-      "card-six card-seven card-seven";
-  }
-  .container-contact {
-    height: 700px;
+  .wrapper-form {
+    margin-top: 75px;
   }
 }

@@ -3,12 +3,12 @@
 @import "./nav-mobile.css";
 @import "./nav-sidebar.css";
 @import "./button-style.css";
+@import "./footer.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
-
+  background-color: var(--almost-white);
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
