@@ -87,6 +87,7 @@ main {
   object-fit: cover;
 }
 #img-hikeMap {
+  border-radius: 9px;
   margin: 5px;
   width: calc(100% - 10px);
   height: calc(100% - 10px);

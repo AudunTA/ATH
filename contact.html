@@ -1,136 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/5386c22845.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"
+    />
+    <script defer src="/js/script.js"></script>
+    <title>Contact - Adventure Trails Hike</title>
+    <meta
+      name="description"
+      content="Contact page for the Adventure Trails Hike, we offer high end hiking trips for professional adults."
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/contact.css" />
-  <script src="https://kit.fontawesome.com/5386c22845.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css"
-    href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin" />
-  <script defer src="/js/script.js"></script>
-  <title>Contact - Adventure Trails Hike</title>
-</head>
+  <body>
+    <nav class="nav-header">
+      <div class="nav-wrapper">
+        <div class="nav-left">
+          <a href="index.html"
+            ><img
+              src="/images/Logo.png"
+              id="nav-header-logo"
+              alt="Logo image for Adventure Hike Trails"
+          /></a>
+        </div>
+        <div class="nav-middle">
+          <a href="index.html" class="active-nav">Home</a>
+          <a href="hike.html" class="header-nav">Hike</a>
+          <a href="contact.html" class="header-nav">Contact </a>
+        </div>
+        <div class="nav-right">
+          <i class="fa-solid fa-gear header-icon"></i>
+          <i class="fa-solid fa-bell header-icon"></i>
+          <i class="fa fa-bars header-icon" aria-hidden="true" id="testone"></i>
+        </div>
+        <nav class="menu-mobile" style="display: none">
+          <div class="top-navigation">
+            <ul>
+              <li class="subheader-sidebar mobile-nav-icon">
+                <i class="fa fa-bars mobile-nav-icon" aria-hidden="true"></i>
+              </li>
+              <li class="mobile-main-nav avtive-mobile-nav">Home</li>
+              <li class="mobile-main-nav">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="mobile-main-nav"><a href="hike.html">All Hikes</a></li>
+              <li class="subheader-sidebar">Short Hikes</li>
+              <li><a href="specific.html">Weekend in the Pyrénées</a></li>
+              <li><a href="specific.html">Seven Mountains, Bergen</a></li>
+              <li><a href="specific.html">Monte Capanne, Tuscany</a></li>
+            </ul>
+            <ul>
+              <li class="subheader-sidebar">Long Hikes</li>
+              <li><a href="specific.html">Laurapinta Trail, Australia</a></li>
+              <li><a href="specific.html">Patagonia, Argentina / Chile</a></li>
+              <li><a href="specific.html">Jammu and Kashmir, India</a></li>
+            </ul>
+            <ul>
+              <li class="subheader-sidebar">Camping Hikes</li>
+              <li>
+                <a href="specific.html"
+                  >Camping in the Atlas Mountains of Morocco</a
+                >
+              </li>
+              <li><a href="specific.html">Patagonia, Argentina / Chile </a></li>
+              <li><a href="specific.html">Jammu and Kashmir, India</a></li>
+            </ul>
+          </div>
+          <div class="bottom-navigation">
+            <ul>
+              <li>Sustainability</li>
+              <li>Health & Safety</li>
+              <li>FAQ</li>
+              <li>About Our Guides</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <div class="container-contact">
+        <div class="wrapper-form">
+          <h1>Get in Touch!</h1>
+          <div class="contact-phone">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>+47 555 1000</p>
+          </div>
 
-<body>
-  <nav class="nav-header">
-    <div class="nav-wrapper">
-      <div class="nav-left">
-        <a href="index.html"><img src="/images/Logo.png" id="nav-header-logo"
-            alt="Logo image for Adventure Hike Trails" /></a>
+          <form>
+            <div class="flex-form">
+              <input
+                id="input-name"
+                type="text"
+                name="name"
+                placeholder="Name *"
+              />
+              <input
+                id="input-email"
+                type="email"
+                name="email"
+                placeholder="email *"
+              />
+            </div>
+
+            <textarea
+              id="input-message"
+              rows="8"
+              placeholder="  Enter your message *"
+            ></textarea>
+            <p id="txt_required">* Required fields</p>
+            <button id="btn_submit" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-      <div class="nav-middle">
-        <a href="index.html" class="active-nav">Home</a>
-        <a href="hike.html" class="header-nav">Hike</a>
-        <a href="contact.html" class="header-nav">Contact </a>
-      </div>
-      <div class="nav-right">
-        <i class="fa-solid fa-gear header-icon"></i>
-        <i class="fa-solid fa-bell header-icon"></i>
-        <i class="fa fa-bars header-icon" aria-hidden="true" id="testone"></i>
-      </div>
-      <nav class="menu-mobile" style="display: none">
+      <nav id="sidebar">
         <div class="top-navigation">
           <ul>
-            <li class="subheader-sidebar mobile-nav-icon">
-              <i class="fa fa-bars mobile-nav-icon" aria-hidden="true"></i>
+            <li class="subheader-sidebar nav-border-top">Short Hikes</li>
+            <li class="sidebar-li">
+              <a href="specific.html">Weekend in the Pyrénées</a>
             </li>
-            <li class="mobile-main-nav avtive-mobile-nav">Home</li>
-            <li class="mobile-main-nav"><a href="contact.html">Contact</a></li>
-            <li class="mobile-main-nav"><a href="hike.html">All Hikes</a></li>
-            <li class="subheader-sidebar">Short Hikes</li>
-            <li><a href="specific.html">Weekend in the Pyrénées</a></li>
-            <li><a href="specific.html">Seven Mountains, Bergen</a></li>
-            <li><a href="specific.html">Monte Capanne, Tuscany</a></li>
+            <li class="sidebar-li">
+              <a href="specific.html">Seven Mountains, Bergen</a>
+            </li>
+            <li class="sidebar-li">
+              <a href="specific.html">Monte Capanne, Tuscany</a>
+            </li>
           </ul>
           <ul>
             <li class="subheader-sidebar">Long Hikes</li>
-            <li><a href="specific.html">Laurapinta Trail, Australia</a></li>
-            <li><a href="specific.html">Patagonia, Argentina / Chile</a></li>
-            <li><a href="specific.html">Jammu and Kashmir, India</a></li>
+            <li class="sidebar-li">
+              <a href="specific.html">Laurapinta Trail, Australia</a>
+            </li>
+            <li class="sidebar-li">
+              <a href="specific.html">Patagonia, Argentina / Chile</a>
+            </li>
+            <li class="sidebar-li">
+              <a href="specific.html">Jammu and Kashmir, India</a>
+            </li>
           </ul>
           <ul>
             <li class="subheader-sidebar">Camping Hikes</li>
-            <li><a href="specific.html">Camping in the Atlas Mountains of Morocco</a></li>
-            <li><a href="specific.html">Patagonia, Argentina / Chile </a></li>
-            <li><a href="specific.html">Jammu and Kashmir, India</a></li>
+            <li class="sidebar-li">
+              <a href="specific.html"
+                >Camping in the Atlas Mountains of Morocco
+              </a>
+            </li>
+            <li class="sidebar-li">
+              <a href="specific.html">Patagonia, Argentina / Chile</a>
+            </li>
+            <li class="sidebar-li">
+              <a href="specific.html">Jammu and Kashmir, India</a>
+            </li>
           </ul>
         </div>
         <div class="bottom-navigation">
           <ul>
-            <li>Sustainability</li>
-            <li>Health & Safety</li>
-            <li>FAQ</li>
-            <li>About Our Guides</li>
+            <li class="sidebar-li">Sustainability</li>
+            <li class="sidebar-li">Health & Safety</li>
+            <li class="sidebar-li">FAQ</li>
+            <li class="sidebar-li">About Our Guides</li>
           </ul>
         </div>
       </nav>
-    </div>
-  </nav>
-  <main>
-    <div class="container-contact">
-      <div class="wrapper-form">
-        <h1>Get in Touch!</h1>
-        <div class="contact-phone">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>+47 555 1000</p>
+    </main>
+    <footer>
+      <div class="wrapper-footer">
+        <div class="icons-footer">
+          <i class="fa fa-facebook-square footer-icon" aria-hidden="true"></i>
+          <i class="fa fa-instagram footer-icon" aria-hidden="true"></i>
+          <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
         </div>
-
-        <form>
-          <div class="flex-form">
-            <input id="input-name" type="text" name="name" placeholder="Name *" />
-            <input id="input-email" type="email" name="email" placeholder="email *" />
-          </div>
-
-          <textarea id="input-message" rows="8" placeholder="  Enter your message *"></textarea>
-          <p id="txt_required">* Required fields</p>
-          <button id="btn_submit" type="submit">Submit</button>
-        </form>
       </div>
-    </div>
-    <nav id="sidebar">
-      <div class="top-navigation">
-        <ul>
-          <li class="subheader-sidebar nav-border-top">Short Hikes</li>
-          <li class="sidebar-li"><a href="specific.html">Weekend in the Pyrénées</a></li>
-          <li class="sidebar-li"><a href="specific.html">Seven Mountains, Bergen</a></li>
-          <li class="sidebar-li"><a href="specific.html">Monte Capanne, Tuscany</a></li>
-        </ul>
-        <ul>
-          <li class="subheader-sidebar">Long Hikes</li>
-          <li class="sidebar-li"><a href="specific.html">Laurapinta Trail, Australia</a></li>
-          <li class="sidebar-li"><a href="specific.html">Patagonia, Argentina / Chile</a></li>
-          <li class="sidebar-li"><a href="specific.html">Jammu and Kashmir, India</a></li>
-
-        </ul>
-        <ul>
-          <li class="subheader-sidebar">Camping Hikes</li>
-          <li class="sidebar-li"><a href="specific.html">Camping in the Atlas Mountains of Morocco </a></li>
-          <li class="sidebar-li"><a href="specific.html">Patagonia, Argentina / Chile</a></li>
-          <li class="sidebar-li"><a href="specific.html">Jammu and Kashmir, India</a></li>
-
-        </ul>
-      </div>
-      <div class="bottom-navigation">
-        <ul>
-          <li class="sidebar-li">Sustainability</li>
-          <li class="sidebar-li">Health & Safety</li>
-          <li class="sidebar-li">FAQ</li>
-          <li class="sidebar-li">About Our Guides</li>
-        </ul>
-      </div>
-    </nav>
-  </main>
-  <footer>
-    <div class="wrapper-footer">
-      <div class="icons-footer">
-        <i class="fa fa-facebook-square footer-icon" aria-hidden="true"></i>
-        <i class="fa fa-instagram footer-icon" aria-hidden="true"></i>
-        <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
