@@ -1,9 +1,0 @@
-@media screen and (min-width: 900px) {
-  .container-cards {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "card-one card-two card-three"
-      "card-one card-four card-five"
-      "card-six card-seven card-seven";
-  }
-}
